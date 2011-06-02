@@ -16,8 +16,8 @@
 		B2BA4EFE13983BE600D5FA9B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BA4EFC13983BE600D5FA9B /* MainWindow.xib */; };
 		B2BA4F0113983BE600D5FA9B /* MSBitlyDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA4F0013983BE600D5FA9B /* MSBitlyDemoViewController.m */; };
 		B2BA4F0413983BE600D5FA9B /* MSBitlyDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BA4F0213983BE600D5FA9B /* MSBitlyDemoViewController.xib */; };
-		B2BA4F29139842D900D5FA9B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA4F26139842D900D5FA9B /* JSONKit.m */; };
-		B2BA4F2A139842D900D5FA9B /* MSBitly.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA4F28139842D900D5FA9B /* MSBitly.m */; };
+		B2BA4F51139846FF00D5FA9B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA4F4E139846FF00D5FA9B /* JSONKit.m */; };
+		B2BA4F52139846FF00D5FA9B /* MSBitly.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA4F50139846FF00D5FA9B /* MSBitly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +35,10 @@
 		B2BA4EFF13983BE600D5FA9B /* MSBitlyDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBitlyDemoViewController.h; sourceTree = "<group>"; };
 		B2BA4F0013983BE600D5FA9B /* MSBitlyDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSBitlyDemoViewController.m; sourceTree = "<group>"; };
 		B2BA4F0313983BE600D5FA9B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MSBitlyDemoViewController.xib; sourceTree = "<group>"; };
-		B2BA4F25139842D900D5FA9B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		B2BA4F26139842D900D5FA9B /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		B2BA4F27139842D900D5FA9B /* MSBitly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBitly.h; sourceTree = "<group>"; };
-		B2BA4F28139842D900D5FA9B /* MSBitly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBitly.m; sourceTree = "<group>"; };
+		B2BA4F4D139846FF00D5FA9B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		B2BA4F4E139846FF00D5FA9B /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		B2BA4F4F139846FF00D5FA9B /* MSBitly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSBitly.h; sourceTree = "<group>"; };
+		B2BA4F50139846FF00D5FA9B /* MSBitly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSBitly.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 				B2BA4EFF13983BE600D5FA9B /* MSBitlyDemoViewController.h */,
 				B2BA4F0013983BE600D5FA9B /* MSBitlyDemoViewController.m */,
 				B2BA4F0213983BE600D5FA9B /* MSBitlyDemoViewController.xib */,
-				B2BA4F23139842D900D5FA9B /* MSBitly */,
+				B2BA4F4C139846FF00D5FA9B /* MSBitly */,
 				B2BA4EF113983BE600D5FA9B /* Supporting Files */,
 			);
 			path = MSBitlyDemo;
@@ -108,24 +108,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B2BA4F23139842D900D5FA9B /* MSBitly */ = {
+		B2BA4F4C139846FF00D5FA9B /* MSBitly */ = {
 			isa = PBXGroup;
 			children = (
-				B2BA4F24139842D900D5FA9B /* JSONKit */,
-				B2BA4F27139842D900D5FA9B /* MSBitly.h */,
-				B2BA4F28139842D900D5FA9B /* MSBitly.m */,
+				B2BA4F4D139846FF00D5FA9B /* JSONKit.h */,
+				B2BA4F4E139846FF00D5FA9B /* JSONKit.m */,
+				B2BA4F4F139846FF00D5FA9B /* MSBitly.h */,
+				B2BA4F50139846FF00D5FA9B /* MSBitly.m */,
 			);
 			path = MSBitly;
-			sourceTree = "<group>";
-		};
-		B2BA4F24139842D900D5FA9B /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				B2BA4F25139842D900D5FA9B /* JSONKit.h */,
-				B2BA4F26139842D900D5FA9B /* JSONKit.m */,
-			);
-			path = JSONKit;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -193,8 +185,8 @@
 				B2BA4EF813983BE600D5FA9B /* main.m in Sources */,
 				B2BA4EFB13983BE600D5FA9B /* MSBitlyDemoAppDelegate.m in Sources */,
 				B2BA4F0113983BE600D5FA9B /* MSBitlyDemoViewController.m in Sources */,
-				B2BA4F29139842D900D5FA9B /* JSONKit.m in Sources */,
-				B2BA4F2A139842D900D5FA9B /* MSBitly.m in Sources */,
+				B2BA4F51139846FF00D5FA9B /* JSONKit.m in Sources */,
+				B2BA4F52139846FF00D5FA9B /* MSBitly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +232,10 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/MSBitly/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -254,9 +248,11 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/MSBitly/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -270,6 +266,7 @@
 				GCC_PREFIX_HEADER = "MSBitlyDemo/MSBitlyDemo-Prefix.pch";
 				INFOPLIST_FILE = "MSBitlyDemo/MSBitlyDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ".../MSBitly/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -283,6 +280,7 @@
 				GCC_PREFIX_HEADER = "MSBitlyDemo/MSBitlyDemo-Prefix.pch";
 				INFOPLIST_FILE = "MSBitlyDemo/MSBitlyDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = ".../MSBitly/**";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
